@@ -1,7 +1,43 @@
-html, body {
+body {
+  font-family: 'Times New Roman', sans-serif;
+  background-color: #f8f0e5; /* Add a semicolon at the end of the line */
   margin: 0;
-  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
-canvas {
-  display: block;
+
+#character-container {
+  text-align: center;
+}
+
+h1 {
+  color: #32513c;
+}
+
+#character-canvas {
+  margin: 20px 0;
+  border: 2px solid #32513c; /* Fix the typo in the color code */
+  border-radius: 8px; /* Round the edges of the canvas */
+}
+
+#buttons-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #668b77;
+  color: #e0e1e1;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px; /* Round the edges of the buttons */
+  font-family: 'Times New Roman', sans-serif; /* Use your custom font as a fallback */
+}
+
+button:hover {
+  background-color: #6705;
 }

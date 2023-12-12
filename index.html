@@ -3,13 +3,40 @@
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
+   
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Character Generator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="utf-8" />
 
-  </head>
-  <body>
-    <main>
-    </main>
-    <script src="sketch.js"></script>
-  </body>
-</html>
+    </head>
+    <body>
+      <main>
+      </main>
+        <main>
+        <div id="character-container">
+            <h1>Character Generator</h1>
+            <div id="character-canvas"></div>
+            <div id="buttons-container">
+                <button onclick="cycleSkin()">Skin Color</button>
+                <button onclick="cycleHairColor()">Hair Color</button>
+                <button onclick="cycleEyeColor()">Eye Color</button>
+                <button onclick="cycleBodyType()">Body Type</button>
+                <button onclick="cycleEarShape()">Ear Shape</button>
+                <button onclick="cycleHairStyle()">Hair Style</button>
+                <button onclick="cycleEyeShape()">Eye Shape</button>
+                <button onclick="cycleNoseShape()">Nose Shape</button>
+                <button onclick="cycleLipShape()">Lip Shape</button>
+                <button onclick="cyclePiercings()">Piercings</button>
+                <button onclick="generateCharacter()">Generate Random Character</button>
+                <button onclick="saveCollage()">Save Collage</button>
+                <button onclick="clearCanvas()">Clear Canvas</button>
+              </div>
+        </div>
+        <script src="sketch.js"></script>
+      </body>
+     </html>
